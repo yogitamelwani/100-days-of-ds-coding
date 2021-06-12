@@ -1,0 +1,61 @@
+//day 1/100 (data structures using c)
+/* multiplication of matrices using array*/
+
+#include<stdio.h>
+#define row1 2
+#define col1 3
+#define row2 col1
+#define col2 2
+
+int main()
+{
+	int mat1[row1][col1], mat2[row2][col2], mat3[row1][col2];
+	int i,j,k;
+	printf(" Hi there, This is Yogita and the following program is for multiplication of two matrices.\n Please follow the further instructions to get your desired output.\n");
+	printf(" ____________________________________________________________________________________________________");
+	printf("\n\n Enter the elements for the first matrix with %d rows and %d columns: \n ",row1,col1);
+	for(i=0;i<row1;i++)
+	{
+		for(j=0;j<col1;j++)
+		{
+			scanf("%d",&mat1[i][j]);
+		}
+		printf(" ");
+		
+	}
+	printf("Enter the elements of the second matrix with %d rows and %d columns: \n ",row2,col2);
+	for(i=0;i<row2;i++)
+	{
+		for(j=0;j<col2;j++)
+		{
+			scanf("%d",&mat2[i][j]);
+		}
+		printf(" ");
+	}
+	printf("Multiplication of these two matrices is:\n ");
+	//calculating multiplication here
+	for(i=0;i<row1;i++)
+	{
+		for(j=0;j<col2;j++)
+		{
+			mat3[i][j]=0;
+			for(k=0;k<col1;k++)
+			{
+				mat3[i][j]+=mat1[i][k]*mat2[k][j];
+			}
+		}
+	}
+	//printing the third matrix here
+	for(i=0;i<row1;i++)
+	{
+		for(j=0;j<col2;j++)
+		{
+			printf("%d ",mat3[i][j]);
+		}
+		printf("\n ");
+	}
+	
+	printf("____________________________________________________________________________________________________");
+	printf("\n\n Thank you in advance for your likes and support :)\n\n\n");
+	return 0;
+}
