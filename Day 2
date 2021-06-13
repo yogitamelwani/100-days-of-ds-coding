@@ -1,0 +1,34 @@
+//day 2/100 (data structures using c)
+/*Program to dereference pointer variables*/
+
+#include<stdio.h>
+int main()
+{
+	int a=30, *ptr1=&a;
+	float b=4.5, *ptr2=&b;
+	printf(" Hi there, This is Yogita and the following program is about basic knowledge on pointers.\n");
+	printf(" ____________________________________________________________________________________________________");
+	printf("\n\n Value stored in a = %d",a);
+	printf("\n Value stored in b = %f",b);
+	
+	printf("\n\n Address of a = %p",&a);
+	printf("\n Address of b = %p",&b);
+	printf("\n Address of ptr1 = %p",&ptr1);
+	printf("\n Address of ptr2 = %p",&ptr2);
+	
+	printf("\n\n Value stored in ptr1 = %p",ptr1);
+	printf("\n ptr1(%p) points to a(%d)",ptr1,a);
+	printf("\n Thus value of a can be called in three ways:");
+	printf("\n a=%d, *ptr1=%d, *(&a)=%d",a,*ptr1,*(&a));
+	printf("\n This proves that ptr1 stores address of a and when called indirectly prints the value stored in a.");
+	
+	printf("\n\n Value stored in ptr2 = %p",ptr2);
+	printf("\n ptr2(%p) points to b(%f)",ptr2, b);
+	printf("\n Thus value of b can be called in three ways:");
+	printf("\n b=%f, *ptr2=%f, *(&b)=%f",b,*ptr2,*(&b));
+	printf("\n This proves that ptr2 stores address of b and when called indirectly prints the value stored in b");
+	
+	printf("\n ____________________________________________________________________________________________________");
+	printf("\n\n Thank you in advance for your likes and support :)\n\n\n");
+	return 0;
+}
