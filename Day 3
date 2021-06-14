@@ -1,0 +1,28 @@
+/* 
+	*Day 3/100 (data structures using c)
+	*Program for basic concept of pointer to pointer
+*/
+
+#include<stdio.h>
+int main()
+{
+	int a=5;
+	int *ptr=&a;
+	int **pptr=&ptr;
+	printf("\n Hi there, This is Yogita and the following program is about basic knowledge on pointers.\n");
+	printf(" ____________________________________________________________________________________________________");
+	printf("\n\n Variable a stores: %d",a);
+	printf("\n Variable *ptr is a pointer that points to 'a' and it stores: %p",ptr);
+	printf("\n Variable **pptr is a pointer of pointer which points to 'ptr' and stores: %p",pptr);
+	printf("\n\n\n Description\t\tVariables through which we can call them");
+	printf("\n _____________\t\t____\t____\t____\t____________");
+	printf("\n\n Value of a\t\ta\t*ptr\t**pptr\t%d",**pptr);
+	printf("\n Address of a\t\t&a\tptr\t*pptr\t%p",*pptr);
+	printf("\n Value of ptr\t\t&a\tptr\t*pptr\t%p",*pptr);
+	printf("\n Address of ptr\t\t-\t&ptr\tpptr\t%p",pptr);
+	printf("\n Value of pptr\t\t-\t&ptr\tpptr\t%p",pptr);
+	printf("\n Address of pptr\t-\t-\t&pptr\t%p",&pptr);
+	printf("\n ____________________________________________________________________________________________________");
+	printf("\n\n Thank you in advance for your likes and support :)\n\n\n");	
+	return 0;
+}
